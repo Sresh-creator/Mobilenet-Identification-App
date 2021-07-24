@@ -26,7 +26,7 @@ function gotResult(error, results){
 console.error(error);
      } else{
         console.log(results);
-        document.getElementById("object_name").innerHTML = results[0].label;
+        document.getElementById("object").innerHTML = results[0].label;
     }
 }
 classifier = ml5.imageClassifier('MobileNet',modelLoaded);
